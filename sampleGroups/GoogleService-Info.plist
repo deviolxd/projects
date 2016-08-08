@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>387748642645-k948lp2j1v4slo841uocj035qcjthl7c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.387748642645-k948lp2j1v4slo841uocj035qcjthl7c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDpiE-3R0P1OTnwR4B3Qel7vI8kCGHBi0w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>387748642645</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dhmm.sampleGroups</string>
+	<key>PROJECT_ID</key>
+	<string>penjigroups-c3aea</string>
+	<key>STORAGE_BUCKET</key>
+	<string>penjigroups-c3aea.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:387748642645:ios:0edb56c38bd0b306</string>
+	<key>DATABASE_URL</key>
+	<string>https://penjigroups-c3aea.firebaseio.com</string>
+</dict>
+</plist>

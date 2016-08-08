@@ -7,15 +7,36 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var ref = FIRDatabaseReference()
+    var memberships = Dictionary<String, String>()
+    
+    func updateMemberships(){
+        
+        ref.child("/memberships/\((FIRAuth.auth()?.currentUser?.uid)!)/").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            // Get groups
+            //NSLog("\(snapshot)")
+            let num = snapshot.childrenCount
+            if(num > 0)
+            {
+                let values = (snapshot.value as? Dictionary<String, String>)!
+                self.memberships = values
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        self.ref = FIRDatabase.database().reference()
         return true
     }
 
